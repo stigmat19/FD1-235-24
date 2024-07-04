@@ -1,0 +1,9 @@
+@media all and (max-width: 620px) {
+    .menu, .banner{
+        width: auto;
+        float: none;
+    }
+    .content{
+        width: auto;
+    }
+}

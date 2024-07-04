@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            height: 10000px;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        h3::before{
+            content: '---------- ';
+        }
+        h3::after{
+            content: ' ----------';
+        }
+        ul{
+            counter-reset: mark;
+        }
+        li::before{
+                counter-increment: mark;
+                content: 'Марка ' counter(mark) ': '
+        }
+        .wrap{
+            border: 1px solid red;
+        }
+        .menu{
+            width: 100px;
+            height: 100px;
+            background: blue;
+            float: left;
+        }
+        .banner{
+            width: 100px;
+            height: 100px;
+            background: rgb(10, 222, 49);
+            float: right;
+        }
+        .bla{
+
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>Audi</li>
+        <li>Bmw</li>
+        <li>Mers</li>
+        <li>Audi</li>
+        <li>Bmw</li>
+        <li>Mers</li>
+
+        <li>Audi</li>
+        <li>Bmw</li>
+        <li>Mers</li>
+        <li>Audi</li>
+        <li>Bmw</li>
+        <li>Mers</li>
+
+        <li>Audi</li>
+        <li>Bmw</li>
+        <li>Mers</li>
+    </ul>
+
+    <ul>
+        <li>Audi</li>
+        <li>Bmw</li>
+        <li>Mers</li>
+    </ul>
+
+    
+    <h3>Hello</h3>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod optio magni illum officiis, voluptatibus quas vero corporis architecto dicta, odit maxime necessitatibus recusandae repellendus. Quasi commodi perferendis alias iure! Eveniet?</p>
+
+
+    <h3>Hello</h3>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod optio magni illum officiis, voluptatibus quas vero corporis architecto dicta, odit maxime necessitatibus recusandae repellendus. Quasi commodi perferendis alias iure! Eveniet?</p>
+
+
+    <h3>Hello</h3>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod optio magni illum officiis, voluptatibus quas vero corporis architecto dicta, odit maxime necessitatibus recusandae repellendus. Quasi commodi perferendis alias iure! Eveniet?</p>
+
+
+    <h3>Hello</h3>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod optio magni illum officiis, voluptatibus quas vero corporis architecto dicta, odit maxime necessitatibus recusandae repellendus. Quasi commodi perferendis alias iure! Eveniet?</p>
+
+
+    <hr>
+
+    <div class="wrap clearfix">
+        <div class="menu"></div>
+        <div class="banner"></div>
+    </div>
+
+
+    <img style="float: left;" src="img/1.jpg" alt="">
+
+    <span>test1</span>
+    <span>test2</span>
+    <span>test3</span>
+
+
+    <div>
+        <ul></ul>
+        <p></p>
+        <span></span>
+    </div>
+    <ul>
+        <li>
+            <a href=""></a>
+        </li>
+        <li>
+            <span>
+                <a href=""></a>
+            </span>
+        </li>
+        <li>
+            <em>
+                <a href=""></a>
+            </em>
+        </li>
+    </ul>
+    <p></p>
+</body>
+</html>

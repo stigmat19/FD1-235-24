@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header, .footer{
+    height: 50px;
+    background-color: aquamarine;
+}
+.menu, .banner{
+    width: 200px;
+    height: 200px;
+}
+.menu{
+    background-color: blue;
+    float: left;
+}
+.banner{
+    background-color: blueviolet;
+    float: right;
+}
+.content{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: burlywood;
+}
+.wrap{
+    background-color:brown;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+h1{
+    color: red;
+}

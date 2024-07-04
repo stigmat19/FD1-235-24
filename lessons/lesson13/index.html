@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            height: 10000px;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="https://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+        firstname: <input type="text" name="firstname" value="hello" maxlength="10" placeholder="enter firstname"> <br>
+        lastname:  <input type="password" name="lastname" autofocus  value="Ivanov" > <br>
+
+        <hr>
+
+        bmw <input type="checkbox" name="cars[]" value="bmw"> <br> 
+        merc <input type="checkbox" name="cars[]" value="merc"> <br> 
+        audi <input type="checkbox" name="cars[]" value="audi"> <br> 
+        <hr>
+        bmw <input type="checkbox" name="cars1"> <br> 
+        merc <input type="checkbox" name="cars1"> <br> 
+        audi <input type="checkbox" name="cars1"> <br>
+
+        <hr>
+
+        bmw <input type="radio" name="cars2"> <br> 
+        merc <input type="radio" name="cars2" checked> <br> 
+        audi <input type="radio" name="cars2"> <br>
+        <hr>
+
+        bmw <input type="radio" name="cars3" value=""> <br> 
+        merc <input type="radio" name="cars3"> <br> 
+        audi <input type="radio" name="cars3"> <br>
+
+        <hr>
+        <input type="file" name="file">
+
+        <input type="submit"> <br>
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <form action="https://fe.it-academy.by/TestForm.php" method="post">
+        <fieldset>
+            bmw <input type="checkbox" name="cars[]" value="bmw"> <br> 
+            merc <input type="checkbox" name="cars[]" value="merc" disabled> <br> 
+            audi <input type="checkbox" name="cars[]" value="audi"> <br> 
+            <input type="hidden" name="type" value="best" >
+            <input type="submit" disabled> <br>
+        </fieldset>
+    </form>
+    <br>
+
+    <form action="https://fe.it-academy.by/TestForm.php" method="get" name="form1">
+        <fieldset>
+            <legend>Паспортные данные</legend>
+            <input type="checkbox" name="cars[]" id="aaa" value="bmw"> <br> 
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, hic. Minima at cum praesentium quo consequatur magni magnam sint quisquam assumenda amet sequi aliquid, quibusdam tempora veritatis doloremque nulla mollitia?
+            
+            merc <input type="checkbox" name="cars[]" value="merc"> <br> 
+            audi <input type="checkbox" name="cars[]" value="audi"> <br> 
+            lada <input type="checkbox" name="cars[]" value="audi"> <br> 
+            <input type="hidden" name="type" value="bad" >
+            
+            <textarea name="textarea" cols="20" rows="5" placeholder="test">sdssdsd</textarea>
+           
+            <select name="city">
+                <optgroup label="Minskaya">
+                    <option value="" disabled selected>Enter city</option>
+                    <option value="Minsk">Minsk</option>
+                    <option value="Borisov">Borisov</option>
+                    <option value="Lida">Lida</option>
+                </optgroup>
+                <optgroup label="Brestskaya">
+                    <option value="Minsk1">Minsk</option>
+                    <option value="Borisov1">Borisov</option>
+                    <option value="Lida1">Lida</option>
+                </optgroup>
+            </select>
+            <label for="aaa">bmw</label>
+            <input type="button" value="test"> <br>
+            <button type="submit"><span>test</span></button>
+        </fieldset>
+    </form>
+ 
+    <script>
+        console.log(decodeURIComponent("https://fe.it-academy.by/TestForm.php?cars%5B%5D=bmw&cars%5B%5D=merc&cars%5B%5D=audi&type=bad&textarea=sdssdsd"))
+    </script>
+  
+</body>
+</html>

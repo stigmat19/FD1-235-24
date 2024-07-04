@@ -1,0 +1,51 @@
+/* [title="onliner"]{
+    color: red;
+} */
+body{
+    height: 10000px;
+}
+/* [href^="http"]{
+    color: red;
+}
+
+[href^="https"]{
+    color: green;
+}
+[src$="jpg"]{
+    border: 3px solid red;
+}
+
+[href*="onliner"]{
+   font-style:italic;
+   font-weight: 900;
+} */
+
+
+
+div > p span{
+    color: red;
+}
+
+p:nth-of-type(even){
+    background-color: red;
+}
+
+li:nth-child(n+2){
+    background-color: aqua;
+}
+a:link{
+    color: red;
+}
+a:visited{
+    color: green;
+}
+
+a:active{
+    font-style: italic;
+}
+a:focus{
+    font-weight: 900;
+}
+a:hover{
+   background-color: aqua;
+}
