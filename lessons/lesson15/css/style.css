@@ -1,0 +1,573 @@
+body {
+        height: 10000px
+}
+
+h1 {
+        color: red;
+        font-size: 30px
+}
+
+a {
+        color: inherit
+}
+
+.header {
+        background-color: #050aff
+}
+
+.header ul {
+        background-color: #058f0e;
+        margin: 10px
+}
+
+@media all and (max-width: 700px) {
+        .header ul {
+                background-color: blueviolet
+        }
+}
+
+@media all and (max-width: 500px) {
+        .header ul {
+                background-color: burlywood
+        }
+}
+
+.header ul li {
+        width: 201px;
+        height: 50px;
+        margin: 10px;
+        background-color: blue;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+        border: 0;
+        border-radius: 6px;
+        -webkit-box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+        box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        font-family: "JetBrains Mono", monospace;
+        height: 48px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        line-height: 1;
+        list-style: none;
+        overflow: hidden;
+        padding-left: 16px;
+        padding-right: 16px;
+        position: relative;
+        text-align: left;
+        text-decoration: none;
+        -webkit-transition: -webkit-box-shadow .15s, -webkit-transform .15s;
+        transition: -webkit-box-shadow .15s, -webkit-transform .15s;
+        transition: box-shadow .15s, transform .15s;
+        transition: box-shadow .15s, transform .15s, -webkit-box-shadow .15s, -webkit-transform .15s;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-user-select: none;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        white-space: nowrap;
+        will-change: box-shadow, transform;
+        font-size: 18px
+}
+
+.header ul li:focus {
+        -webkit-box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+        box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset
+}
+
+.header ul li:hover {
+        -webkit-box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+        box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+        -webkit-transform: translateY(-2px);
+        transform: translateY(-2px)
+}
+
+.header ul li:active {
+        -webkit-box-shadow: #3c4fe0 0 3px 7px inset;
+        box-shadow: #3c4fe0 0 3px 7px inset;
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px)
+}
+
+.header ul li:nth-child(2) {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-image: radial-gradient(100% 100% at 100% 0, red 0, #5468ff 100%);
+        border: 0;
+        border-radius: 6px;
+        -webkit-box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+        box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        font-family: "JetBrains Mono", monospace;
+        height: 70px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        line-height: 1;
+        list-style: none;
+        overflow: hidden;
+        padding-left: 16px;
+        padding-right: 16px;
+        position: relative;
+        text-align: left;
+        text-decoration: none;
+        -webkit-transition: -webkit-box-shadow .15s, -webkit-transform .15s;
+        transition: -webkit-box-shadow .15s, -webkit-transform .15s;
+        transition: box-shadow .15s, transform .15s;
+        transition: box-shadow .15s, transform .15s, -webkit-box-shadow .15s, -webkit-transform .15s;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-user-select: none;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        white-space: nowrap;
+        will-change: box-shadow, transform;
+        font-size: 18px
+}
+
+.header ul li:nth-child(2):focus {
+        -webkit-box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+        box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset
+}
+
+.header ul li:nth-child(2):hover {
+        -webkit-box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+        box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+        -webkit-transform: translateY(-2px);
+        transform: translateY(-2px)
+}
+
+.header ul li:nth-child(2):active {
+        -webkit-box-shadow: #3c4fe0 0 3px 7px inset;
+        box-shadow: #3c4fe0 0 3px 7px inset;
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px)
+}
+
+.header ul li:hover {
+        background-color: #12e419
+}
+
+li.color1 {
+        background-image: url("bg1.jpg")
+}
+
+li.color2 {
+        background-image: url("bg2.jpg")
+}
+
+li.color3 {
+        background-image: url("bg3.jpg")
+}
+
+li.color4 {
+        background-image: url("bg4.jpg")
+}
+
+li.color5 {
+        background-image: url("bg5.jpg")
+}
+
+li.color6 {
+        background-image: url("bg6.jpg")
+}
+
+li.color7 {
+        background-image: url("bg7.jpg")
+}
+
+li.color8 {
+        background-image: url("bg8.jpg")
+}
+
+li.color9 {
+        background-image: url("bg9.jpg")
+}
+
+li.color10 {
+        background-image: url("bg10.jpg")
+}
+
+li.color11 {
+        background-image: url("bg11.jpg")
+}
+
+li.color12 {
+        background-image: url("bg12.jpg")
+}
+
+li.color13 {
+        background-image: url("bg13.jpg")
+}
+
+li.color14 {
+        background-image: url("bg14.jpg")
+}
+
+li.color15 {
+        background-image: url("bg15.jpg")
+}
+
+li.color16 {
+        background-image: url("bg16.jpg")
+}
+
+li.color17 {
+        background-image: url("bg17.jpg")
+}
+
+li.color18 {
+        background-image: url("bg18.jpg")
+}
+
+li.color19 {
+        background-image: url("bg19.jpg")
+}
+
+li.color20 {
+        background-image: url("bg20.jpg")
+}
+
+li.color21 {
+        background-image: url("bg21.jpg")
+}
+
+li.color22 {
+        background-image: url("bg22.jpg")
+}
+
+li.color23 {
+        background-image: url("bg23.jpg")
+}
+
+li.color24 {
+        background-image: url("bg24.jpg")
+}
+
+li.color25 {
+        background-image: url("bg25.jpg")
+}
+
+li.color26 {
+        background-image: url("bg26.jpg")
+}
+
+li.color27 {
+        background-image: url("bg27.jpg")
+}
+
+li.color28 {
+        background-image: url("bg28.jpg")
+}
+
+li.color29 {
+        background-image: url("bg29.jpg")
+}
+
+li.color30 {
+        background-image: url("bg30.jpg")
+}
+
+li.color31 {
+        background-image: url("bg31.jpg")
+}
+
+li.color32 {
+        background-image: url("bg32.jpg")
+}
+
+li.color33 {
+        background-image: url("bg33.jpg")
+}
+
+li.color34 {
+        background-image: url("bg34.jpg")
+}
+
+li.color35 {
+        background-image: url("bg35.jpg")
+}
+
+li.color36 {
+        background-image: url("bg36.jpg")
+}
+
+li.color37 {
+        background-image: url("bg37.jpg")
+}
+
+li.color38 {
+        background-image: url("bg38.jpg")
+}
+
+li.color39 {
+        background-image: url("bg39.jpg")
+}
+
+li.color40 {
+        background-image: url("bg40.jpg")
+}
+
+li.color41 {
+        background-image: url("bg41.jpg")
+}
+
+li.color42 {
+        background-image: url("bg42.jpg")
+}
+
+li.color43 {
+        background-image: url("bg43.jpg")
+}
+
+li.color44 {
+        background-image: url("bg44.jpg")
+}
+
+li.color45 {
+        background-image: url("bg45.jpg")
+}
+
+li.color46 {
+        background-image: url("bg46.jpg")
+}
+
+li.color47 {
+        background-image: url("bg47.jpg")
+}
+
+li.color48 {
+        background-image: url("bg48.jpg")
+}
+
+li.color49 {
+        background-image: url("bg49.jpg")
+}
+
+li.color50 {
+        background-image: url("bg50.jpg")
+}
+
+li.color51 {
+        background-image: url("bg51.jpg")
+}
+
+li.color52 {
+        background-image: url("bg52.jpg")
+}
+
+li.color53 {
+        background-image: url("bg53.jpg")
+}
+
+li.color54 {
+        background-image: url("bg54.jpg")
+}
+
+li.color55 {
+        background-image: url("bg55.jpg")
+}
+
+li.color56 {
+        background-image: url("bg56.jpg")
+}
+
+li.color57 {
+        background-image: url("bg57.jpg")
+}
+
+li.color58 {
+        background-image: url("bg58.jpg")
+}
+
+li.color59 {
+        background-image: url("bg59.jpg")
+}
+
+li.color60 {
+        background-image: url("bg60.jpg")
+}
+
+li.color61 {
+        background-image: url("bg61.jpg")
+}
+
+li.color62 {
+        background-image: url("bg62.jpg")
+}
+
+li.color63 {
+        background-image: url("bg63.jpg")
+}
+
+li.color64 {
+        background-image: url("bg64.jpg")
+}
+
+li.color65 {
+        background-image: url("bg65.jpg")
+}
+
+li.color66 {
+        background-image: url("bg66.jpg")
+}
+
+li.color67 {
+        background-image: url("bg67.jpg")
+}
+
+li.color68 {
+        background-image: url("bg68.jpg")
+}
+
+li.color69 {
+        background-image: url("bg69.jpg")
+}
+
+li.color70 {
+        background-image: url("bg70.jpg")
+}
+
+li.color71 {
+        background-image: url("bg71.jpg")
+}
+
+li.color72 {
+        background-image: url("bg72.jpg")
+}
+
+li.color73 {
+        background-image: url("bg73.jpg")
+}
+
+li.color74 {
+        background-image: url("bg74.jpg")
+}
+
+li.color75 {
+        background-image: url("bg75.jpg")
+}
+
+li.color76 {
+        background-image: url("bg76.jpg")
+}
+
+li.color77 {
+        background-image: url("bg77.jpg")
+}
+
+li.color78 {
+        background-image: url("bg78.jpg")
+}
+
+li.color79 {
+        background-image: url("bg79.jpg")
+}
+
+li.color80 {
+        background-image: url("bg80.jpg")
+}
+
+li.color81 {
+        background-image: url("bg81.jpg")
+}
+
+li.color82 {
+        background-image: url("bg82.jpg")
+}
+
+li.color83 {
+        background-image: url("bg83.jpg")
+}
+
+li.color84 {
+        background-image: url("bg84.jpg")
+}
+
+li.color85 {
+        background-image: url("bg85.jpg")
+}
+
+li.color86 {
+        background-image: url("bg86.jpg")
+}
+
+li.color87 {
+        background-image: url("bg87.jpg")
+}
+
+li.color88 {
+        background-image: url("bg88.jpg")
+}
+
+li.color89 {
+        background-image: url("bg89.jpg")
+}
+
+li.color90 {
+        background-image: url("bg90.jpg")
+}
+
+li.color91 {
+        background-image: url("bg91.jpg")
+}
+
+li.color92 {
+        background-image: url("bg92.jpg")
+}
+
+li.color93 {
+        background-image: url("bg93.jpg")
+}
+
+li.color94 {
+        background-image: url("bg94.jpg")
+}
+
+li.color95 {
+        background-image: url("bg95.jpg")
+}
+
+li.color96 {
+        background-image: url("bg96.jpg")
+}
+
+li.color97 {
+        background-image: url("bg97.jpg")
+}
+
+li.color98 {
+        background-image: url("bg98.jpg")
+}
+
+li.color99 {
+        background-image: url("bg99.jpg")
+}
+
+li.color100 {
+        background-image: url("bg100.jpg")
+}

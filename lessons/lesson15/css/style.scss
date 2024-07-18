@@ -1,0 +1,61 @@
+// @import "variables.scss";
+@import "variables_dark.scss";
+
+@import "mixins.scss";
+
+body{
+    height: 10000px;
+}
+h1{
+    color: red;
+    font-size: 10px+20px;
+}
+a{
+    color: inherit;
+}
+
+
+
+.header{
+    background-color: $aqua;
+
+    ul{
+        background-color: $red;
+        margin: 10px;
+
+        @include media(700px){
+            background-color: blueviolet;
+        }
+        @include media(500px){
+            background-color:burlywood;
+        }
+
+        li{
+            width: 201px;
+            height: 50px;
+            margin: 10px;
+            background-color: blue;
+
+            @include btn();
+
+            &:nth-child(2){
+                @include btn(70px, red, blue);
+            }
+
+            &:hover{
+                background-color: rgb(18, 228, 25);
+            }
+        }
+    }
+}
+
+
+
+@for $color_number from 1 through 100
+{
+    li.color#{$color_number}
+    {
+        background-image: url("bg" + $color_number +".jpg");
+    }
+}
+
