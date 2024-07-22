@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        label {
+            user-select: none;
+            display: inline-block;
+            width: 30px;
+            height: 16px;
+            background-color: red;
+            border-radius: 10px;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        label::before {
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: azure;
+            top: 2px;
+            left: 2px;
+            transition: 0.5s;
+        }
+
+        input:checked + label{
+            background-color: green;
+        }
+
+        input:checked + label::before {
+            content: "";
+            left: 16px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <input hidden type="checkbox" id="aaa">
+    <label for="aaa"></label>
+
+</body>
+
+</html>

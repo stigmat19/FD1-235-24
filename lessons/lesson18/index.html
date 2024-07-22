@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .aaa{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+        input[type="checkbox"]:checked{
+            width: 20px;
+            height: 20px;
+            border: 1px solid red;
+        }
+    </style>
+
+</head>
+<body>
+
+    <datalist id=animalslist>
+        <option value="собака">
+        <option value="кошка">
+        <option value="попугай">
+    </datalist>
+      Введите вид животного: <input type=text list=animalslist>
+
+      <hr>
+      <form action="https://fe.it-academy.by/TestForm.php" method="post">
+        <input type="checkbox" name="aaa[]" value="one">
+        <input type="checkbox" name="aaa[]" value="two">
+        <input type="checkbox" name="aaa[]" value="three">
+
+        <input type="email" disabled name="emails[]" multiple>
+        <input type="range" name="range" min="1" max="51" step="10">
+        <input type="submit"> 
+      </form>
+
+
+</body>
+</html>
