@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+
+    <style>
+        #app{
+            margin: 50px;
+            display: flex;
+            flex-flow: wrap;
+        }
+        .card{
+            margin: 10px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="app"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        var app = document.getElementById('app');
+
+        var cars = [
+            {
+                brand: 'BMW',
+                model: 'm3',
+                color: 'red',
+                imgUrl: 'https://avatars.mds.yandex.net/get-verba/1540742/2a00000178874741ebe297e8ba6c4145a1c7/cattouchret'
+            },
+            {
+                brand: 'Audi',
+                model: 'RS6',
+                color: 'green',
+                imgUrl: 'https://cdn.motor1.com/images/mgl/nAmpAy/0:800:2478:1857/audi-rs6-avant-gt.webp'
+            },
+            {
+                brand: 'Audi',
+                model: 'RS6',
+                color: 'green',
+                imgUrl: 'https://cdn.motor1.com/images/mgl/nAmpAy/0:800:2478:1857/audi-rs6-avant-gt.webp'
+            },
+            {
+                brand: 'Audi',
+                model: 'RS6',
+                color: 'green',
+                imgUrl: 'https://cdn.motor1.com/images/mgl/nAmpAy/0:800:2478:1857/audi-rs6-avant-gt.webp'
+            },
+            {
+                brand: 'Audi',
+                model: 'RS6',
+                color: 'green',
+                imgUrl: 'https://cdn.motor1.com/images/mgl/nAmpAy/0:800:2478:1857/audi-rs6-avant-gt.webp'
+            },
+            {
+                brand: 'Audi',
+                model: 'RS6',
+                color: 'green',
+                imgUrl: 'https://cdn.motor1.com/images/mgl/nAmpAy/0:800:2478:1857/audi-rs6-avant-gt.webp'
+            },
+            {
+                brand: 'Audi',
+                model: 'RS6',
+                color: 'green',
+                imgUrl: 'https://cdn.motor1.com/images/mgl/nAmpAy/0:800:2478:1857/audi-rs6-avant-gt.webp'
+            }
+        ];
+
+        var htmlElements = '';
+
+        for(var i = 0; i < cars.length; i++){
+            htmlElements += `
+            <div class="card" style="width: 10rem;">
+                <img src="${cars[i].imgUrl}" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">${cars[i].brand}</h5>
+                <p class="card-text">${cars[i].model}</p>
+                <p class="card-text">${cars[i].color}</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>`
+        }
+
+        console.log('-----htmlElements', htmlElements);
+
+        app.innerHTML = htmlElements
+
+    </script>
+
+</body>
+</html>
+ 

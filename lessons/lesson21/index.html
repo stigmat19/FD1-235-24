@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // var age = 18;
+        // var isAuth;
+
+        // if (age >= 18) {
+        //     isAuth = true
+        // }
+        // else {
+        //     isAuth = false
+        // }
+
+        // var isAuth1 = age >= 18 ? true : false;
+
+        // var speed = 7
+        // var gender = false
+
+        // if (speed < 5) {
+        //     if (gender)
+        //         console.log('пошёл');
+        //     else
+        //         console.log('пошла');
+        // }
+        // else {
+        //     if (gender)
+        //         console.log('побежал');
+        //     else
+        //         console.log('побежала');
+        // }
+
+        // speed < 5 
+        //     ? gender 
+        //             ? console.log('пошёл')
+        //             : console.log('пошла')
+        //     : gender 
+        //             ? console.log('побежал')
+        //             : console.log('пошла')
+
+        // =============
+        // var speedStr = parseFloat(prompt('Введите скорость:'));
+        // speedStr = parseFloat(speedStr);
+
+        // if (speedStr > 60)
+        //     console.log('превышение!');
+        // else
+        //     console.log('норма.');
+
+        //==================
+        // var driver = confirm('У вас есть права?');
+
+        // if (driver)
+        //     console.log('права есть');
+        // else
+        //     console.log('прав нет');
+
+
+        var colorNumS = prompt('Введите номер цвета в радуге:');
+        var colorNum = parseInt(colorNumS);
+        var colorName;
+        switch (colorNum) {
+            case 1:
+                colorName = 'красный';
+                break;
+            case 2:
+                colorName = 'оранжевый';
+                break;
+            case 3:
+                colorName = 'жёлтый';
+                break;
+            case 4:
+                colorName = 'зелёный';
+                break;
+            case 5:
+                colorName = 'голубой';
+                break;
+            case 6:
+                colorName = 'синий';
+                break;
+            case 7:
+                colorName = 'фиолетовый';
+                break;
+            default: 
+                alert("no color")    
+        }
+
+        console.log(colorName);
+
+    </script>
+
+</body>
+
+</html>
